@@ -1,0 +1,28 @@
+<ion-view view-title="Tourist Me Detail">
+    <ion-nav-bar class="bar-assertive">
+        <ion-nav-buttons side="left">
+            <button class="button button-clear" ng-click="back()">
+                <i class="ion-chevron-left"></i>
+            </button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content ng-init="in()">
+        <div ng-repeat="place in placesComplete">
+            <ion-item class="item-divider">
+                <b>{{place.name}}</b>
+            </ion-item>
+            <label class="item">
+                <span>Rating: {{place.rating}} <i class="icon ion-star"></i></span>
+            </label>
+            <label class="item">
+                <span>Spent Time: {{place.time}}</span>
+            </label>
+            <label class="item">
+                <span>Schedule: {{place.hours}}</span>
+            </label>
+            <label class="item">
+                <span>Spent Money: {{place.price}}</span>
+            </label>
+        </div>
+    </ion-content>
+</ion-view>

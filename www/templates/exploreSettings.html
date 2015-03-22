@@ -1,0 +1,49 @@
+<ion-view view-title="Explore Settings">
+    <ion-nav-bar class="bar-assertive">
+        <ion-nav-buttons side="left">
+            <button class="button button-clear" ng-click="back()">
+                <i class="ion-chevron-left"></i>
+            </button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content>
+        <ion-item class="item-divider">
+            Default
+        </ion-item>
+        <label class="item item-toggle item-icon-left">
+            <i class="icon ion-home icon-assertive"></i>Indoor
+            <label class="toggle toggle-assertive">
+                <input type="checkbox">
+                <div class="track">
+                    <div class="handle"></div>
+                </div>
+            </label>
+        </label>
+        <label class="item item-toggle item-icon-left">
+            <i class="icon ion-cloud icon-assertive"></i>Outdoor
+            <label class="toggle toggle-assertive">
+                <input type="checkbox">
+                <div class="track">
+                    <div class="handle"></div>
+                </div>
+            </label>
+        </label>
+        <ion-item class="item-divider">
+        </ion-item>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">Free Time (hrs)</span>
+            <input type="number" placeholder="3" ng-model="time">        
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">Distance (km)</span>
+            <input type="number" placeholder="10" ng-model="time">        
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">People</span>
+            <input type="number" placeholder="3" ng-model="time">        
+        </label>
+        <div class="padding">
+            <button class="button button-block button-outline button-assertive" ng-click="saveExplore()">Save</button>
+        </div>
+    </ion-content>
+</ion-view>

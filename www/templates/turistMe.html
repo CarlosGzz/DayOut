@@ -1,0 +1,13 @@
+<ion-view view-title="Tourist Me">
+    <ion-nav-bar class="bar-assertive">
+        <ion-nav-buttons side="left">
+            <button class="button button-clear" ng-click="back()">
+                <i class="ion-chevron-left"></i>
+            </button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content ng-controller="TouristMeControl" ng-init="initialize()">
+        <button class="button button-assertive button-block button-outline" ng-click="detail()">Detail of {{numPlaces}} places</button>
+        <div id="map" data-tap-disabled="true"></div>
+    </ion-content>
+</ion-view>

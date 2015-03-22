@@ -1,0 +1,43 @@
+<ion-view view-title="Explore">
+    <ion-content>
+        <div class="list">
+            <div class="row">
+                <div class="col">
+                    <ion-item class="item-checkbox">
+                        <label class="checkbox checkbox-assertive">
+                            <input type="checkbox" checked>
+                        </label>
+                        Indoor
+                    </ion-item>
+                </div>
+                <div class="col">
+                    <ion-item class="item-checkbox">
+                        <label class="checkbox checkbox-assertive">
+                            <input type="checkbox" checked>
+                        </label>
+                        Outdoor
+                    </ion-item>
+                </div>
+            </div>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Available money?</span>
+                <input type="number" placeholder="100.00" ng-model="money">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Available hours?</span>
+                <input type="number" placeholder="2.3" ng-model="time">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Distance to move around?</span>
+                <input type="number"  placeholder="1.2" ng-model="distance">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">People?</span>
+                <input type="number" placeholder="1" ng-model="people">
+            </label>
+            <div class="padding-explore">
+                <button class="button button-block button-outline button-assertive" ng-click="go()">Take me Somewhere!!</button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

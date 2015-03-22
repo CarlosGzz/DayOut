@@ -1,0 +1,11 @@
+<ion-view view-title="Tourist Me">
+    <ion-content ng-init="ini()">
+        <ion-list>
+            <ion-item class="item-icon-left item-avatar" ng-repeat="route in routesComplete" href="#/turistMe/{{route.id}}">
+                <i class="icon ion-location"></i>
+                <h2>{{route.name}}</h2>
+                <p>Places: {{route.number}}</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

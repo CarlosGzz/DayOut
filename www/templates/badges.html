@@ -1,0 +1,16 @@
+<ion-view view-title="Badges">
+    <ion-nav-bar class="bar-assertive">
+        <ion-nav-buttons side="left">
+            <button class="button button-clear" ng-click="back()">
+                <i class="ion-chevron-left"></i>
+            </button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-icon-left" ng-repeat="badge in badges" ng-click="clickBadge({{badge.id}})">
+                <i class="{{badge.icon}}"></i>{{badge.name}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

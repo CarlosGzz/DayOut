@@ -1,0 +1,44 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-assertive">
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menu-content"></ion-nav-view>
+    </ion-side-menu-content>
+    
+    <ion-side-menu side="left">
+        <ion-header-bar class="bar-assertive">
+            <h1 class="title">Options</h1>
+        </ion-header-bar>
+        <ion-content>
+            <ion-list>
+                <ion-item nav-clear menu-close href="#/profile" class=" item-avatar">
+                    <img ng-src="https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg"><h2 style="margin-top: 15px; margin-left: 10px">Jose Luis</h2>
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/badges" >
+                    <label class="item item-divider">Badges</label>
+                    <div class="padding">
+                        <p>Couch Potatoe</p>
+                        <p>Ranger</p>
+                        <p>Globe Trotter</p>
+                    </div>
+                </ion-item>
+                <ion-item nav-clear menu-close >
+                    <label class="item item-divider">Promotions</label>
+                    <div class="padding">
+                        <p>2x1 Plaza Sesamo</p>
+                        <p>$30 Cinemex ticket</p>
+                    </div>
+                </ion-item>
+                <ion-item nav-clear menu-close class="item-icon-left">
+                    <i class="icon ion-star icon-assertive"></i>Favorites
+                </ion-item>
+                <ion-item nav-clear menu-close class="item-icon-left">
+                    <i class="icon ion-clock icon-assertive"></i>Recents
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

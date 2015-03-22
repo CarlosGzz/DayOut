@@ -1,0 +1,22 @@
+.padding-explore{
+    padding: 20px;
+}
+
+.scroll {
+    height: 90%;
+}
+ 
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.profilePhoto{
+    max-height: 75px;
+    max-width: 75px;
+}
+
+.profileName{
+    margin-left: 20px;
+    font-size: 25px;
+}

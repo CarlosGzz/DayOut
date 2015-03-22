@@ -1,0 +1,32 @@
+<ion-view view-title="Create">
+    <ion-content>
+        <div class="list">
+            <div class="padding">
+                <span class="input-label">Route Name</span>
+                <input type="text" placeholder="Route Name" ng-model="routeName">
+                <span class="input-label">Spent Money $</span>
+                <input type="number" placeholder="100.00" ng-model="money">
+                <span class="input-label">Spent Time (hours)</span>
+                <input type="number" placeholder="1.2" ng-model="time">
+            </div>
+            <ion-item class="item-icon-left">
+                <i class="icon ion-android-pin icon-assertive"></i>Lugar 1
+            </ion-item>
+            <ion-item class="item-icon-left">
+                <i class="icon ion-android-pin icon-assertive"></i>Lugar 2
+            </ion-item>
+            <ion-item class="item-icon-left">
+                <i class="icon ion-android-pin icon-assertive"></i>Lugar 3
+            </ion-item>
+            <!--<ion-item ng-repeat="place in places" class="item-icon-left">
+                <i class="icon ion-android-pin icon-assertive"></i>{{place.name}}
+            </ion-item>-->
+            <div>
+                <button class="button button-block button-assertive">Check In</button>
+            </div>
+            <div>
+                <button class="button button-block button-small button-outline button-assertive">End</button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
